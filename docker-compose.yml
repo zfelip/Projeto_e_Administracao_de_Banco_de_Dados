@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres_tarefabd
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: atividade_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database/20252/tarefas/zfelip/scripts:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_tarefabd
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@atv.com
+      PGADMIN_DEFAULT_PASSWORD: dmin12345
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
