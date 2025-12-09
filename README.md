@@ -9,3 +9,4 @@ Repositório criado para desenvolvimento de atividade na disciplina de Projeto e
 # Tarefa
 * [Tarefa 02 - Conexão Banco de Dados com ODBC e ORM](./database/20252/tarefas/zfelip/tarefa-orm.md)
 * [Tarefa 04 - Projeto de Banco de Dados com Python e MongoDB](./database/20252/tarefas/zfelip/T4-SistemaGestaoAtv/tarefa-mongodb.md)
+* [Seminário 01 - Banco de Dados NoSQL - Apache Cassandra](./database/20252/tarefas/zfelip/S1-Seminario/seminario-cassandra.md)
